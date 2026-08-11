@@ -20,7 +20,7 @@ body {
 }
 
 .bg-card {
-    position: absolute;
+    position: fixed;
     border-radius: 40px;
     overflow: hidden;
     top: 40px;
@@ -46,7 +46,6 @@ body {
             inset: 20px;
             border: 2px solid #A6ED00;
             border-radius: 20px;
-            z-index: 2;
         }
     }
 }
@@ -64,12 +63,12 @@ body {
 
     h1 {
         font-weight: 700;
-        font-size: 30;
+        font-size: 30px;
         text-transform: uppercase;
     }
 
     h2 {
-        margin-top: 16px;
+        margin-top: 30px;
         font-weight: 700;
         font-size: 48px;
         line-height: 1.1;
@@ -107,6 +106,196 @@ body {
             &:nth-child(2) {
                 border-image-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='334' height='63' fill='none'%3E%3Cpath fill='%23000' d='M334 43c0 11.046-8.954 20-20 20H0l11.973-47.854A20 20 0 0 1 31.375 0H314c11.046 0 20 8.954 20 20z' opacity='.7'/%3E%3C/svg%3E");
             }
+        }
+    }
+}
+
+@media (width <= 1920px) {
+    .human {
+        &._woman {
+            width: 1000px;
+            right: 0;
+        }
+
+        &._man {
+            right: 0;
+            width: 700px;
+        }
+    }
+}
+
+@media (width <= 1560px) {
+    .human {
+        &._woman {
+            width: 900px;
+        }
+
+        &._man {
+            width: 600px;
+        }
+    }
+
+    .bg-card {
+        &._left {
+            width: calc(100% - 516px);
+        }
+
+        &._right {
+            width: 396px;
+        }
+    }
+
+    .offer {
+        top: 100px;
+        max-width: 760px;
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .buttons {
+            .button {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (width <= 1280px) {
+    .human {
+        &._woman {
+            width: 700px;
+        }
+
+        &._man {
+            width: 500px;
+        }
+    }
+
+    .bg-card {
+        top: 20px;
+        bottom: 20px;
+
+        &._left {
+            left: 20px;
+            width: calc(100% - 456px);
+        }
+
+        &._right {
+            right: 20px;
+        }
+    }
+
+    .offer {
+        padding: 28px;
+        left: 40px;
+        top: 40px;
+        max-width: 580px;
+
+        h1 {
+            font-size: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-top: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .buttons {
+            margin-top: 20px;
+
+            .button {
+                font-size: 20px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media (width <= 992px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-card {
+        &._left {
+            left: 8px;
+            bottom: 8px;
+            right: 8px;
+            width: auto;
+            top: 20px;
+        }
+
+        &._right {
+            display: none;
+        }
+    }
+
+    .human {
+        position: relative;
+        margin-top: auto;
+        padding-top: 20px;
+
+        &._woman {
+            max-width: 520px;
+        }
+
+        &._man {
+            max-width: 520px;
+            margin-left: auto;
+        }
+    }
+
+    .offer {
+        position: relative;
+        top: 36px;
+        max-width: 100%;
+        width: calc(100% - 32px);
+        left: 16px;
+    }
+}
+
+@media (width <= 600px) {
+    .human {
+        &._woman {
+            max-width: 100%;
+        }
+
+        &._man {
+            max-width: 100%;
+        }
+    }
+
+    .offer {
+        .buttons {
+            row-gap: 12px;
+            flex-direction: column;
+
+            .button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (width <= 393px) {
+    .human {
+        &._man {
+            padding-top: 0;
         }
     }
 }
