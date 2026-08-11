@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'YFF RARE Hyper';
+    src: url('../fonts/YFFRARETRIAL-HyperRegular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YFF RARE Hyper';
+    src: url('../fonts/YFFRARETRIAL-HyperBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YFF RARE Power';
+    src: url('../fonts/YFFRARETRIAL-PowerBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}

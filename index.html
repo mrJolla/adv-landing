@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Альфа-селлер</title>
+  <meta name="description" content="Альфа-селлер">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+  <div class="offer">
+    <h1>Альфа-Селлер</h1>
+    <h2>Единая платформа<br/> управления<br/> онлайн-бизнесом</h2>
+    <p>Запустите продажи онлайн с готовыми инструментами для бизнеса.</p>
+
+    <div class="buttons">
+      <button class="button" id="create-market-button">Создать магазин</button>
+      <button class="button">Отправить заявку</button>
+    </div>
+  </div>
+
+  <div class="bg-card _left">
+    <img src="./assets/imgs/left-bg.png" alt="">
+  </div>
+
+  <div class="bg-card _right">
+    <img src="./assets/imgs/right-bg.png" alt="">
+    <div class="border"></div>
+  </div>
+
+  <img src="./assets/imgs/woman.png" alt="" class="human _woman" />
+
+  <div id="modal" class="modal _hidden">
+    <div class="backdrop"></div>
+
+    <div class="content">
+      <div class="modal-title">Регистрация</div>
+
+      <button class="close-button">
+        <img src="./assets/imgs/cross.svg" alt="">
+      </button>
+
+      <form class="form">
+        <input type="text" placeholder="ФИО" class="input">
+        <input type="email" placeholder="Е-mail" class="input">
+        <input type="tel" placeholder="Телефон" class="input">
+
+        <label class="checkbox">
+          <input type="checkbox">
+          <span class="label">Даю согласие на обработку персональных данных</span>
+        </label>
+
+        <button type="submit" class="button">Зарегистрироваться</button>
+      </form>
+
+      <div class="social-auth">
+        <p class="title">Войти через</p>
+
+        <div class="social">
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+          <div class="item"></div>
+        </div>
+
+        <a href="#" class="has-account">Уже есть аккаунт? Войти</a>
+      </div>
+    </div>
+  </div>
+
+  <script defer src="assets/index.js"></script>
+</body>
+</html>

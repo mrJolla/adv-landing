@@ -1,0 +1,130 @@
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 11;
+
+    &._hidden {
+        display: none;
+    }
+
+    .backdrop {
+        position: fixed;
+        inset: 0;
+        background-color: #00000080;
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        background: #A6ED00;
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 480px;
+        width: 98%;
+
+        .modal-title {
+            font-family: "YFF RARE Power";
+            font-weight: 700;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+
+            .input {
+                outline: none;
+                padding: 20px;
+                border: 1px solid #AAEB16;
+                border-radius: 12px;
+                background-color: #fff;
+                font-family: "YFF RARE Hyper";
+                font-size: 14px;
+                line-height: 1;
+            }
+
+            .checkbox {
+                font-family: "YFF RARE Hyper";
+                font-size: 14px;
+                display: flex;
+                align-items: center;
+                column-gap: 8px;
+
+                input {
+                    appearance: none;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url("../imgs/checkbox.svg");
+
+                    &:checked {
+                        background-image: url("../imgs/checkbox-checked.svg");
+                    }
+                }
+            }
+
+            .button {
+                font-family: "YFF RARE Hyper";
+                font-weight: 700;
+                font-size: 24px;
+                margin-top: 28px;
+                height: 63px;
+                box-sizing: border-box;
+                border-image-slice: 20 fill;
+                border-image-width: 20px;
+                border-style: solid;
+                border-image-source: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='334' height='63' fill='none'%3E%3Cpath fill='%23000' d='M0 20C0 8.954 8.954 0 20 0h314l-11.973 47.854A20 20 0 0 1 302.625 63H20C8.954 63 0 54.046 0 43z' opacity='.7'/%3E%3C/svg%3E");
+                color: #fff;
+            }
+        }
+
+        .social-auth {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 35px;
+
+            .title {
+                text-align: center;
+                font-family: "YFF RARE Power";
+                font-weight: 700;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+
+            .social {
+                margin: 12px 0;
+                display: flex;
+                column-gap: 12px;
+                justify-content: center;
+
+                .item {
+                    background-color: #0B88F2;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                }
+            }
+
+            .has-account {
+                text-align: center;
+                font-family: "YFF RARE Power";
+                font-weight: 700;
+                font-size: 14px;
+            }
+        }
+    }
+}
