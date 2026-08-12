@@ -232,6 +232,8 @@ body {
     }
 
     .bg-card {
+        border-radius: 20px;
+
         &._left {
             left: 8px;
             bottom: 8px;
